@@ -19,8 +19,8 @@ def index():
     result = Favquotes.query.all()
     return render_template('index.html', result = result)
 
-@app.route('/qoutes')
-def qoutes():
+@app.route('/quotes')
+def quotes():
     return render_template('quotes.html')
 
 @app.route('/process', methods =['POST'])
